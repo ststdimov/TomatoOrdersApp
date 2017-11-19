@@ -6,10 +6,5 @@ import com.musala.orders.model.TomatoOrder;
 
 public interface TomatoOrdersService {
 	
-	
-	/**
-	 * @param size
-	 * @return
-	 */
 	List<TomatoOrder> getTomatoOrders(int size);
 }

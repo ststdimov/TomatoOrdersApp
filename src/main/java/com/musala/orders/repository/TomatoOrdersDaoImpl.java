@@ -17,7 +17,6 @@ public class TomatoOrdersDaoImpl implements TomatoOrdersDao {
 	private final static String[] PROVIDERS = { "Heinz", "Hunt's", "Del Monte", "Le Ol' Granma" };
 	private static Random randomGenerator = new Random();
 		
-	
 	@Override
 	public List<TomatoOrder> getOrders(int size) {
 		
@@ -31,6 +30,15 @@ public class TomatoOrdersDaoImpl implements TomatoOrdersDao {
 	}
 
 	
+	
+	/**
+	 * @return Return randomly generated order with the following constraints:
+	 * id should be valid UUID
+	 * provider should be one from the list : "Heinz", "Hunt's", "Del Monte", "Le Ol' Granma"
+	 * timestamp should be in interval defined by the start of the year and 
+	 * the current time
+	 * tomatoes should be between 0 and 2000
+	 */
 	private TomatoOrder generateTomatoOrder() {
 		TomatoOrder tomatoOrder = new TomatoOrder();
 		

@@ -22,8 +22,6 @@ import com.musala.orders.services.TomatoOrdersService;
 import com.musala.orders.services.TomatoOrdersServiceImpl;
 
 
-
-
 @RunWith(SpringRunner.class)
 @WebMvcTest(OrdersController.class)
 public class FullIntegrationTest {
@@ -34,7 +32,6 @@ public class FullIntegrationTest {
 	@Autowired
 	private MockMvc mockMvc;
 
-	
 	@Autowired 
 	TomatoOrdersService ordersService;
 	
@@ -54,7 +51,6 @@ public class FullIntegrationTest {
 			return new TomatoOrdersDaoImpl();
 		}
 	}
-
 
 	@Test
 	public void fullTestWithoutSizeParam() throws Exception {
