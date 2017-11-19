@@ -50,4 +50,10 @@ public class TomatoOrder {
 	public void setTimestamp(long timestamp) {
 		this.timestamp = timestamp;
 	}
+
+	@Override
+	public String toString() {
+		return "TomatoOrder [id=" + id + ", tomatoes=" + tomatoes + ", provider=" + provider + ", timestamp="
+				+ timestamp + "]";
+	}
 }
