@@ -13,12 +13,12 @@ endpoint, where the size parameter is optional. The response is in the following
 `“timestamp": <randomly-generated long from the beginning of this year to today>`
 `}, ... ]`
 
-##Installation guide
+## Installation guide
 
 1. Install Java 8 available at `http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
 2. Clone the project from `https://github.com/ststdimov/TomatoOrdersApp.git`
 
-##Run the application
+## Run the application
 - Open the terminal console and navigate to the project root. Type `mvnw spring-boot:run` to start the application.
 The web application is available at `http://localhost:8080`
 
