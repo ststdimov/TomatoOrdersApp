@@ -24,3 +24,8 @@ The web application is available at `http://localhost:8080`
 
 - Another option is to import the project in the Spring Tool Suite (available at `https://spring.io/tools`)
 and run it as Java application 
+
+## Run tests
+- Navigate to the root application directory and from console execute `mvnw test`
+- Another approach is to locate the package `com.musala.orders.application` in `src/test/java` folder.
+Execute each of the files as JUnit Test by using STS (Spring Tool Suite) or other suitable IDE
