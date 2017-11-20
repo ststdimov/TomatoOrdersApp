@@ -17,8 +17,8 @@ import com.musala.orders.services.TomatoOrdersServiceImpl;
 public class TomatoOrdersDaoImpl implements TomatoOrdersDao {
 	
 	private static final Logger log = LoggerFactory.getLogger(TomatoOrdersDaoImpl.class);
-	private final static int MAX_TOMATOES_PER_ORDER = 2000;
-	private final static String[] PROVIDERS = { "Heinz", "Hunt's", "Del Monte", "Le Ol' Granma" };
+	private static final int MAX_TOMATOES_PER_ORDER = 2000;
+	private static final  String[] PROVIDERS = { "Heinz", "Hunt's", "Del Monte", "Le Ol' Granma" };
 	private static Random randomGenerator = new Random();
 		
 	@Override

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,8 +30,9 @@ import com.musala.orders.services.TomatoOrdersService;
 
 @RestController
 @RequestMapping("/orders")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 public class OrdersController {
+	
 	
 	@Autowired
 	TomatoOrdersService tomatoOrdersService;
@@ -44,6 +46,7 @@ public class OrdersController {
 	 * @return List<TomatoOrder> 
 	 * 
 	 */
+	
 	@GetMapping("/data")
 	public List<TomatoOrder> getOrders(@RequestParam(defaultValue = "3") int size) {
 		return tomatoOrdersService.getTomatoOrders(size);
