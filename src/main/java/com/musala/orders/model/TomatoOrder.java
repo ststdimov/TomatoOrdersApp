@@ -13,7 +13,6 @@ public class TomatoOrder {
 	}
 	
 	public TomatoOrder(String id, int tomatoes, String provider, long timestamp) {
-		super();
 		this.id = id;
 		this.tomatoes = tomatoes;
 		this.provider = provider;
