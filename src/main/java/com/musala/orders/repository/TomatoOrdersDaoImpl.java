@@ -6,13 +6,17 @@ import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.musala.orders.model.TomatoOrder;
+import com.musala.orders.services.TomatoOrdersServiceImpl;
 
 @Component
 public class TomatoOrdersDaoImpl implements TomatoOrdersDao {
-
+	
+	private static final Logger log = LoggerFactory.getLogger(TomatoOrdersDaoImpl.class);
 	private final static int MAX_TOMATOES_PER_ORDER = 2000;
 	private final static String[] PROVIDERS = { "Heinz", "Hunt's", "Del Monte", "Le Ol' Granma" };
 	private static Random randomGenerator = new Random();
@@ -26,6 +30,7 @@ public class TomatoOrdersDaoImpl implements TomatoOrdersDao {
 			tomatoOrders.add(generateTomatoOrder());
 		}
 		
+		log.info("Number of generated tomato orders is " + tomatoOrders.size());
 		return tomatoOrders;
 	}
 
