@@ -27,7 +27,7 @@ import com.musala.orders.services.TomatoOrdersService;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(OrdersController.class)
-public class OrdersServiceIntegrationTest {
+public class WebMVCTest {
 
 	private static final int DEFAULT_ORDERS_SIZE = 3;
 	private static final int ORDERS_SIZE = 2;
